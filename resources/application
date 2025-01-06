@@ -12,9 +12,3 @@ spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 
-# Thymeleaf Configuration (if applicable)
-spring.thymeleaf.cache=false
-
-# Logging Configuration
-logging.level.org.springframework=INFO
-logging.level.com.volunteerplatform=DEBUG

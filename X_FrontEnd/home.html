@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Community Volunteer Platform</title>
+</head>
+<body class="bg-white text-gray-800 min-h-screen">
+
+  <!-- Navbar -->
+<!-- Navbar -->
+<nav class="bg-white shadow fixed top-0 left-0 w-full z-50">
+    <div class="w-full px-6 lg:px-20 flex justify-between items-center py-4">
+      <!-- Logo on the left -->
+      <a href="#" class="text-2xl font-bold text-blue-500">Community Volunteer Platform</a>
+  
+      <!-- Navigation links on the right -->
+      <ul class="hidden md:flex space-x-6 text-gray-600 mt-2">
+        <li><a href="home.html" class="hover:text-blue-500">Home</a></li>
+        
+        <!-- Volunteer Opportunities Dropdown -->
+        <li class="group relative">
+            <a href="#" class="text-gray px-5 py-3  transition">Volunteer Opportunities</a>
+            <ul class="absolute left-0 hidden group-hover:block bg-white shadow-lg py-2 mt-2 w-48">
+              <li><a href="CreateVTask.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">Task Creation</a></li>
+              <li><a href="UpDateVTask.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">Task Update</a></li>
+              <li><a href="ViewTask.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">View Tasks</a></li>
+              <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">Task Deletion</a></li>
+            </ul>
+          </li>
+    
+  
+        <!-- Contact Dropdown -->
+        <li class="group relative">
+            <a href="#" class=" text-gray px-6 py-3  transition">Sign up</a>
+          <ul class="absolute left-0 hidden group-hover:block bg-white shadow-lg py-2 mt-2 w-48">
+            <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">SignUp As Valunteer</a></li>
+            <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">SignUp As Community</a></li>
+           <!-- <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-100"></a></li>
+            <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-100"></a></li> -->
+          </ul>
+        </li>
+        
+        <li><a href="SandF.html" class="hover:text-blue-500">Search & Filter</a></li>
+        <li><a href="#" class="hover:text-blue-500">Rating</a></li>
+        
+       <!-- Log In Dropdown -->
+      <li class="group relative">
+        <a href="#" class="rounded-md bg-blue-500 text-white px-6 py-2 hover:bg-blue-600 transition">Get Involved</a>
+        <!-- Dropdown items -->
+        <ul class="absolute left-0 hidden group-hover:block bg-white shadow-lg py-2 mt-2 w-48">
+          <li><a href="registerForm.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">Registration Form</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">Update Profile</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">View Organization</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">Delete Account</a></li>
+        </ul>
+      </li>
+        
+      </ul>
+    </div>
+  </nav>
+  
+
+  <!-- Hero Section -->
+  <div class="bg-white min-h-screen flex items-center pt-10 mt-2">
+    <div class="w-full px-7 lg:px-20 flex flex-col lg:flex-row items-center">
+      <!-- Left Content -->
+      <div class="lg:w-1/2 text-center lg:text-left">
+        <h1 class="text-4xl font-bold text-gray-800 lg:text-5xl">
+          Join Our Community of <span class="text-blue-500"> Volunteers</span>
+        </h1>
+        <p class="mt-4 text-gray-600">
+          Welcome to Cummunity Voluntreeing! We Connect passionate individyals with 
+          meaningful opportunities to make difference. Explore how can contirbure 
+          and be part of our mission to create positive change.
+        </p>
+        <div class="mt-6">
+          <a
+            href="#"
+            class="px-6 py-3 bg-blue-500 text-white rounded-md shadow hover:bg-blue-600 transition duration-300"
+          >
+            Get Involved
+          </a>
+          <a
+            href="#"
+            class="ml-4 px-6 py-3 border border-blue-500 text-blue-500 rounded-md hover:bg-blue-100 transition duration-300"
+          >
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="lg:w-1/2 mt-5 lg:mt-0 ">
+        <img
+          src="img02.jpg"
+          alt="Hero Image"
+          class="rounded-lg shadow-lg size-2px"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- info section  start -->
+    
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between">
+      <!-- Content (Left side) -->
+      <div class="lg:w-1/2 text-center lg:text-left">
+        <h2 class="text-3xl font-bold text-gray-800 lg:text-4xl">
+          Explore Our Diverse Volunteer Opportunities
+        </h2>
+        <a href="#"
+          class="mt-6 inline-block rounded-md bg-blue-500 text-white px-6 py-2 hover:bg-blue-600 transition">
+          <i class="bi bi-chevron-right"></i> View All Opportunities
+        </a>
+      </div>
+  
+      <!-- Two Divs on Right Side -->
+      <div class="lg:w-1/2 mt-10 lg:mt-0 space-y-6 text-center lg:text-left lg:pl-10">
+        <p>Join us in making a difference in your Community. Our Platform offers a wide range of volunteer tasks to match your interests and sills.
+             Get involved and help us build a better tomorrow.
+        </p>
+        <!-- First Text Div -->
+        <div class="bg-white p-2 ">
+          <h3 class="text-xl font-bold text-gray-800">Community Service</h3>
+          <p class="text-gray-600 mt-4">Engage in meaningfull tasks that benefit local communities and foster social responsibility.</p>
+        </div>
+  
+        <!-- Second Text Div -->
+        <div class="bg-white p-2 ">
+          <h3 class="text-xl font-bold text-gray-800">Skill-Based Volunteering</h3>
+          <p class="text-gray-600 mt-4">Utilize your skills to support organizations in need and enhance your personal growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- info Section end-->
+<br>
+<br>
+  <!-- Footer -->
+
+<footer class="bg-white border-t py-8">
+    <div class="container mx-auto px-6 lg:px-20 flex flex-col lg:flex-row justify-between items-start">
+      <!-- Logo Section -->
+      <div class="lg:w-1/4 mb-6 lg:mb-0">
+        <a href="#" class="text-2xl font-bold text-blue-500">Community Volunteer Platform</a>
+        <p class="text-gray-600 mt-4">
+          Community Volunteering is dedicated to connecting voluntree with meaning-full opportunities to make a difference.
+          Join us in our mission to support and uplift communities through dedicated service and collaboration.
+        </p>
+      </div>
+  
+      <!-- Footer Links Section -->
+      <div class="lg:w-3/4 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <!-- About Us -->
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800 mb-4">About Us</h5>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-blue-500">Our Mission</a></li>
+            <li><a href="#" class="hover:text-blue-500">Our Team</a></li>
+            <li><a href="#" class="hover:text-blue-500">Careers</a></li>
+            <li><a href="#" class="hover:text-blue-500">FAQs</a></li>
+          </ul>
+        </div>
+  
+        <!-- Services -->
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800 mb-4">Services</h5>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-blue-500">Volunteer Programs</a></li>
+            <li><a href="#" class="hover:text-blue-500">Fundraising</a></li>
+            <li><a href="#" class="hover:text-blue-500">Community Events</a></li>
+            <li><a href="#" class="hover:text-blue-500">Support Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Quick Links -->
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800 mb-4">Quick Links</h5>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-blue-500">Home</a></li>
+            <li><a href="#" class="hover:text-blue-500">About</a></li>
+            <li><a href="#" class="hover:text-blue-500">Services</a></li>
+            <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact -->
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800 mb-4">Contact</h5>
+          <ul class="space-y-2 text-gray-600">
+            <li>123 Main Road, Pune</li>
+            <li>Email: <a href="mailto:info@example.com" class="hover:text-blue-500">Shubham@gmail.com</a></li>
+            <li>Phone: <a href="tel:+1234567890" class="hover:text-blue-500">+91 1234567890</a></li>
+            <li><a href="#" class="hover:text-blue-500">Java Developer</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  
+  
+  
+
+
+  
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

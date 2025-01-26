@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Community Volunteer Platform</title>
+</head>
+<body class="bg-white text-gray-800 min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow fixed top-0 left-0 w-full z-50">
+    <div class="flex flex-wrap items-center justify-between px-6 lg:px-20 py-4">
+      <!-- Logo -->
+      <a href="#" class="text-2xl font-bold text-blue-500">Community Volunteer Platform</a>
+
+      <!-- Hamburger Menu -->
+      <button id="menu-btn" class="md:hidden text-gray-800">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+      <!-- Links -->
+      <ul id="menu" class="hidden md:flex md:space-x-6 space-y-4 md:space-y-0 md:flex-row flex-col w-full md:w-auto">
+        <li><a href="home1.html" class="hover:text-blue-500">Home</a></li>
+        <li class="group relative">
+          <a href="VOppurtunites.html" class="hover:text-blue-500 py-3 transition">Volunteer Opportunities</a>
+          <ul class="absolute hidden group-hover:block bg-white shadow-lg py-2 mt-2 w-48">
+            <li><a href="Create Volunteer Task.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">Task Creation</a></li>
+            <li><a href="UpDateVTask.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">Task Update</a></li>
+            <li><a href="ViewTask.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">View Tasks</a></li>
+            <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">Task Deletion</a></li>
+          </ul>
+        </li>
+        <li><a href="SandF.html" class="hover:text-blue-500">Search & Filter</a></li>
+        <li><a href="Rating.html" class="hover:text-blue-500">Rating</a></li>
+        <li class="group relative">
+            <a href="#" class="hover:text-blue-500  py-3 transition">Sign up</a>
+            <ul class="absolute hidden group-hover:block bg-white shadow-lg py-2 mt-2 w-48">
+              <li><a href="TaskDetails.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">SignUp Task</a></li>
+              <li><a href="Task Signup History.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">View Task</a></li>
+              <li><a href="ViewTask.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">View Tasks</a></li>
+             
+            </ul>
+          </li>
+         <!-- Log In Dropdown -->
+      <li class="group relative">
+        <a href="#" class="rounded-md bg-blue-500 text-white px-6 py-2 hover:bg-blue-600 transition">Get Involved</a>
+        <!-- Dropdown items -->
+        <ul class="absolute left-0 hidden group-hover:block bg-white shadow-lg py-2 mt-2 w-48">
+          <li><a href="registerForm.html" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">Registration Form</a></li>
+          <li><a href="Update profile.html"class="block px-4 py-2 text-gray-600 hover:bg-blue-100">Update Profile</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">View Organization</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-blue-100">Delete Account</a></li>
+        </ul>
+      </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Navbar  End -->
+  <br>
+
+  <!-- Search and Filter Start -->
+<div class="container mx-auto py-24 bg-gray-200">
+  <h2 class="text-2xl font-semibold text-center text-blue-500 mb-6">Search & Filter Volunteer Opportunities</h2>
+  
+  <div class="flex flex-col md:flex-row justify-between gap-6 mb-6">
+    <!-- Search Bar -->
+    <div class="flex-1">
+      <input type="text" id="search" class="p-3 w-full border border-gray-300 rounded-md" placeholder="Search by task title or description">
+    </div>
+
+    <!-- Location Filter -->
+    <div class="flex-1">
+      <select id="location" class="p-3 w-full border border-gray-300 rounded-md">
+        <option value="">Select Location</option>
+        <option value="New York">New York</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="Chicago">Chicago</option>
+        <option value="San Francisco">San Francisco</option>
+      </select>
+    </div>
+
+    <!-- Skills Filter -->
+    <div class="flex-1">
+      <select id="skills" class="p-3 w-full border border-gray-300 rounded-md">
+        <option value="">Select Skill</option>
+        <option value="Environmental">Environmental</option>
+        <option value="Healthcare">Healthcare</option>
+        <option value="Education">Education</option>
+        <option value="Technology">Technology</option>
+      </select>
+    </div>
+
+    <!-- Date Filter -->
+    <div class="flex-1">
+      <input type="date" id="date" class="p-3 w-full border border-gray-300 rounded-md">
+    </div>
+  </div>
+
+  <!-- Sort Options -->
+  <div class="flex justify-between items-center mb-6">
+    <div>
+      <label for="sort" class="mr-2">Sort by:</label>
+      <select id="sort" class="p-3 border border-gray-300 rounded-md">
+        <option value="date">Date</option>
+        <option value="proximity">Proximity</option>
+      </select>
+    </div>
+    </div>
+
+
+ <!-- Centered Search Button -->
+    <div class="flex justify-center mb-6">
+      <button id="search-btn" class="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600">Search</button>
+    </div>
+
+  <!-- Task List -->
+  <div id="task-list">
+    <!-- Task Preview Items -->
+    <div class="bg-white p-4 shadow-md rounded-lg mb-4">
+      <h3 class="text-xl font-semibold text-blue-500">Clean the Park</h3>
+      <p class="text-gray-600">Date: 2025-03-15 | Location: City Park | Skills: Environmental</p>
+      <a href="#" class="text-blue-500 hover:underline">View Details</a>
+    </div>
+
+    <!-- More task previews can be added here -->
+  </div>
+</div>
+<!-- Search and Filter End -->
+
+
+ 
+<br>
+<br>
+  <!-- Footer -->
+
+<footer class="bg-white border-t py-8">
+    <div class="container mx-auto px-6 lg:px-20 flex flex-col lg:flex-row justify-between items-start">
+      <!-- Logo Section -->
+      <div class="lg:w-1/4 mb-6 lg:mb-0">
+        <a href="#" class="text-2xl font-bold text-blue-500">Community Volunteer Platform</a>
+        <p class="text-gray-600 mt-4">
+          Community Volunteering is dedicated to connecting voluntree with meaning-full opportunities to make a difference.
+          Join us in our mission to support and uplift communities through dedicated service and collaboration.
+        </p>
+      </div>
+  
+      <!-- Footer Links Section -->
+      <div class="lg:w-3/4 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <!-- About Us -->
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800 mb-4">About Us</h5>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-blue-500">Our Mission</a></li>
+            <li><a href="#" class="hover:text-blue-500">Our Team</a></li>
+            <li><a href="#" class="hover:text-blue-500">Careers</a></li>
+            <li><a href="#" class="hover:text-blue-500">FAQs</a></li>
+          </ul>
+        </div>
+  
+        <!-- Services -->
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800 mb-4">Services</h5>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-blue-500">Volunteer Programs</a></li>
+            <li><a href="#" class="hover:text-blue-500">Fundraising</a></li>
+            <li><a href="#" class="hover:text-blue-500">Community Events</a></li>
+            <li><a href="#" class="hover:text-blue-500">Support Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Quick Links -->
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800 mb-4">Quick Links</h5>
+          <ul class="space-y-2 text-gray-600">
+            <li><a href="#" class="hover:text-blue-500">Home</a></li>
+            <li><a href="#" class="hover:text-blue-500">About</a></li>
+            <li><a href="#" class="hover:text-blue-500">Services</a></li>
+            <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact -->
+        <div>
+          <h5 class="text-lg font-semibold text-gray-800 mb-4">Contact</h5>
+          <ul class="space-y-2 text-gray-600">
+            <li>123 Main Road, Pune</li>
+            <li>Email: <a href="mailto:info@example.com" class="hover:text-blue-500">Shubham@gmail.com</a></li>
+            <li>Phone: <a href="tel:+1234567890" class="hover:text-blue-500">+91 1234567890</a></li>
+            <li><a href="#" class="hover:text-blue-500">Java Developer</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  </body>
+  </html>
